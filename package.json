@@ -1,0 +1,12 @@
+{
+  "name": "quick-geoip",
+  "version": "1.0.0",
+  "description": "A fast, approximate, geoip",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
