@@ -1,7 +1,13 @@
 const ips = require('./ips')
 const { ipToNum } = require('./util')
 
+const ipv4Regex = /^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/
+
 function find (ip) {
+  if (!ipv4Regex.test(ip)) {
+    return null
+  }
+
   const num = ipToNum(ip)
   if (num < ips[0][0] || num > ips[ips.length-1][0]) {
     return null
